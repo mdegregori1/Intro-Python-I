@@ -61,3 +61,5 @@ print(waypoints)
 # YOUR CODE HERE
 for x in waypoints: 
     print(x.values())
+
+#for loop... if you knew arr length, you could put that, but calling the name is enough

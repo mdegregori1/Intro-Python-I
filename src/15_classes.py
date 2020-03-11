@@ -14,7 +14,9 @@ class LatLon:
 class Waypoint(LatLon):
     def __init__(self, name, lat, lon):
         super().__init__(lat, lon)
+        #call down latlon values
         self.name = name
+        #now add name arg
     def __str__(self):
         return f"{self.name}, {self.lat}, {self.lon}"
 
