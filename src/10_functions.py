@@ -16,3 +16,14 @@ num = int(num)
 # YOUR CODE HERE
 
 is_even(num)
+
+def is_true(x):
+    if x == True:
+        print('true!!')
+    else: 
+        print('false')
+
+x = True 
+is_true(x)
+
+# practice function above to check understanding
