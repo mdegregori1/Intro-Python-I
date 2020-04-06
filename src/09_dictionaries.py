@@ -4,10 +4,8 @@ There's not much different with Python's version compared to what
 you'll find in other languages (though you can also initialize and
 populate dictionaries using comprehensions just like you can with
 lists!).
-
 The docs can be found here:
 https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-
 For this exercise, you have a list of dictionaries. Each dictionary
 has the following keys:
  - lat: a signed integer representing a latitude value
@@ -35,15 +33,6 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-x = {
-    "lat": 34, 
-    "lon": -123, 
-    "name": "new place"
-}
-waypoints.append(x)
-
-print(waypoints)
-
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
@@ -51,15 +40,6 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-waypoints[0] ["lon"] = -130
-waypoints[0] ["name"] = "not a real place"
-
-print(waypoints)
-
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-for x in waypoints: 
-    print(x.values())
-
-#for loop... if you knew arr length, you could put that, but calling the name is enough
