@@ -9,6 +9,12 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+# if you use "with", close happens automatically
+with open('foo.txt') as f:
+    file_content = f.read()
+    print('file contents foo.txt:',file_content)
+
+
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -16,3 +22,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+#open bar txt
+f = open('bar.txt', 'w')
+
+# write contents of the file
+write = f.write("this is random \n text that I was \n asked to provide" )
+
+# same as before (read + print)
+with open('bar.txt') as f:
+    file_content = f.read()
+    print('file contents bar.txt:', file_content)
