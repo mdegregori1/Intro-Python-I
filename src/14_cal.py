@@ -30,6 +30,7 @@ from datetime import datetime
 
 today_month = datetime.now().month
 today_year = datetime.now().year
+args = sys.argv[1:]
 
 
 # we need a way to to receive the dates == right now, they are just passed inputs that don't render a calendar
@@ -40,7 +41,7 @@ def get_date(month=today_month, year=today_year):
 
 # sys.argv is command line arguments 
 # conditional call func in different ways
-args = sys.argv[1:]
+
 if len(args) == 2:
   get_date(int(args[0]), int(args[1]))
 elif len(args) == 1:
